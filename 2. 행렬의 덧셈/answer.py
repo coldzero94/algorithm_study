@@ -5,7 +5,7 @@ def solution(arr1, arr2):
         arr_sum = []
         
         for j in range(len(arr1[i])):
-            arr_sum.append(arr1[i][j] + arr2[i][x])
+            arr_sum.append(arr1[i][j] + arr2[i][j])
         answer.append(arr_sum)
 
     return answer
