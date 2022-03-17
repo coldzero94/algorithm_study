@@ -19,9 +19,13 @@
 ----
 
 ## 문제 접근 로그
-1. 
-2. 
-3. 
+1. for문 중첩을 통해서 리스트안에 리스트를 더해주는 방식으로 접근함
+2. result에 append할때에 for문이 다 끝나고 넣었는데 그렇게되면 하나만 넣어져서 성립이 안됐다
+3. 그래서 처음 두번째 for문이 돌아가고 그다음에 for문에서 answer에 append 하는 방식으로 처리했다.
+
+## 추가 공부가 필요한 사항
+1. numpy
+2. zip 개념
 
 ## 문제 url
 https://programmers.co.kr/learn/courses/30/lessons/12950
