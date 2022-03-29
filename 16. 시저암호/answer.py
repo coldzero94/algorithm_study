@@ -22,3 +22,6 @@ def solution(s, n):
 #         if s_list
 #     return answer
 print(solution(12))
+
+
+print(solution(14))
