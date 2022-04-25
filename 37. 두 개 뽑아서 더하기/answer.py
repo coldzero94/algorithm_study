@@ -7,6 +7,7 @@ def solution(numbers):
     answer = list(answer)
     answer.sort()
     return answer
+    
 # def solution(numbers):
 #     answer = []
 #     for i in range(len(numbers)):
