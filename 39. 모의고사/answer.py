@@ -1,0 +1,34 @@
+#https://programmers.co.kr/learn/courses/30/lessons/42840
+def solution(answers):
+    answer = [0 for i in range(3)]
+
+    man1 = [1,2,3,4,5]
+    man2 = [2,1,2,3,2,4,2,5]
+    man3 = [3,3,1,1,2,2,4,4,5,5]
+    
+    for i in range(len(answers)):
+        ans = answers[i]
+        if(man1[i%len(man1)] == ans):
+            answer[0] += 1
+        if(man2[i%len(man2)] == ans):
+            answer[1] += 1
+        if(man3[i%len(man3)] == ans):
+            answer[2] += 1     
+    
+    result = []
+    for i in range(len(answer)):
+        if(answer[i] == max(answer)):
+            result.append(i+1)
+    
+    return sorted(result)
+
+# def solution(answers):
+#     answer = []
+#     no_1 = [1,2,3,4,5]
+#     no_2 = [2,1,2,3,2,4,2,5]
+#     no_3 = [3,3,1,1,2,2,4,4,5,5]
+#     for i in range(4):
+#         if answers[i] == no_1[i]:
+#             answer_1 += 1
+#     for x in range()
+#     return answer
