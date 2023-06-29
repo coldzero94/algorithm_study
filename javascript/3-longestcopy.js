@@ -10,15 +10,22 @@ var lengthOfLongestSubstring = function (s) {
 
   for (let i = 0; i < arr.length; i++) {
     let testNum = 0;
-    let testSet = new Set();
+    let isDuplicate = false;
     for (let j = i; j < arr.length; j++) {
-      if (testSet.has(arr[j])) {
+      for (let k = i; k < j; k++) {
+        if (arr[k] === arr[j]) {
+          isDuplicate = true;
+          break;
+        }
+      }
+      if (isDuplicate) {
         break;
       }
-      testSet.add(arr[j]);
       testNum += 1;
     }
-    topNum = Math.max(topNum, testNum);
+    if (testNum > topNum) {
+      topNum = testNum;
+    }
   }
 
   return topNum;
